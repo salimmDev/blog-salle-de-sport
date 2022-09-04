@@ -1,0 +1,5 @@
+C REATE : création des éléments dans la base de données (BDD-----> Bases de Donées) (bdd.php)(view.php)
+R EAD : lecture d'un ou plusieurs enregistrements (verif-contact.php)
+
+U PDATE : mettre à jour un enregistrement (update.php) 
+D ELETE : supprimer un enregistrement (delete.php)

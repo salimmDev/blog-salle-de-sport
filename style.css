@@ -1,0 +1,334 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*Declaration color -----> background and text*/
+.bg-white {
+    background-color: #fff;
+}
+.bg-dark-strong {
+  background-color: #000000;
+}
+.bg-black {
+    background-color: #000;
+}
+.bg-grey {
+  background-color: #212529;
+}
+.text-white {
+    color: #fff;
+}
+.text-brown {
+  Color: #b7912c;
+}
+
+/*Link hoover*/
+a:hover{
+  color: #b7912c !important;
+}
+
+/*Navbar hoover*/
+.nav-item a:hover{
+  background-color: #b7912c;
+}
+/*Nav scroll color*/
+header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: background-color .5s ease;
+  z-index: 1000;
+}
+/*color navbar bas = shadow*/
+.scrolling-active{
+  background-color: rgba(183, 0, 0, 0.773);
+  box-shadow: 0 3px 1rem rgb(0, 0, 0);
+}
+input{
+  display:block;
+}
+::placeholder{
+    font-size:12.5px;
+}
+span.cacher {
+  display: none;
+  color: red;
+}
+
+/*Slider*/
+.h-100vh {
+  height: 100vh;
+  width: auto;
+}
+.carousel-indicators button { /*Slider indicator*/
+  height: 15px !important;
+  width: 15px !important;
+  border-radius: 100%;
+  background-color: #ffffff !important;
+}
+.textButton {
+  margin-bottom: 200px;
+}
+.bouttonSlide {
+  margin-bottom: 175px;
+}
+
+/*line under the title*/
+.underline_gold {
+  border-bottom: 3.5px solid #b7912c;
+  width: 7.5%;
+  margin: auto;
+  top: 0;
+}
+
+/*Card activity Background*/
+.activity-one {
+  background-image: url("./images/activites/bg_activite_1.jpg");
+  width: auto;
+  height: 395px;
+  overflow:hidden;
+}
+.activity-two {
+  background-image: url("./images/activites/bg_activite_2.jpg");
+  width: auto;
+  height: 395px;
+  overflow:hidden;
+}
+.activity-three {
+  background-image: url("./images/activites/bg_activite_3.jpg");
+  width: auto;
+  height: 395px;
+  overflow:hidden;
+}
+.activity-four {
+  background-image: url("./images/activites/bg_activite_4.jpg");
+  width: auto;
+  height: 395px;
+  overflow:hidden;
+}
+
+/*Card activity Zoom*/
+.zoom:hover {
+  -ms-transform: scale(0.5); /* IE 9 */
+  -webkit-transform: scale(0.5); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+
+/*animation Underline activity*/  
+.anime_start_underline_activity {
+  position: relative;
+  }
+.anime_start_underline_activity::after {
+  content: '';
+  display: block;
+  width: 25px;
+  margin: 5px auto 0 auto;
+  height: 2px;
+  border-radius: 2px;
+  background: rgb(255, 255, 255);
+  transition: width 0.3s ease 0s;
+} 
+.anime_start_underline_activity:hover:after { 
+  width: 100%; 
+} 
+
+/*Image card*/
+.galery-item {
+    max-width: 100%;
+}
+
+/*Btn color Brown*/
+.btn-dark {
+  background-color:  #b7912c !important;
+  border-color: #b7912c !important;
+  padding: 10px 100px;
+}
+
+/*Image partenaire*/
+.galery-partenaire {
+    max-width: 100%;
+}
+
+/*btn_little_slider*/
+.btn_little_slider {
+  background-color: #b7912c; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+/*Hoover black + icon in image*/
+.container {
+  position: relative;
+}
+.image {
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: #000000b3;
+  backdrop-filter: blur(3.5px);
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+.icon {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.fa-user a:hover {
+  color: #eee;
+} 
+
+/*Underline*/
+.underline_grey {
+  border-bottom: 1.5px solid #c4c4c4;
+  width: 80%;
+  margin: auto;
+  }
+
+    /*Underline in tittle contact*/
+  .underline_gold_contact {
+    border-bottom: 3.5px solid #b7912c;
+    width: 7.5%;
+  }
+
+/*animation Underline actuality*/
+.anime_start_underline {
+position: relative;
+}
+.anime_start_underline:after {  
+content: "";
+display: block;
+width: 25px;
+height: 2px;
+position: absolute;
+transition: width 0.3s ease 0s, left 0.3s ease 0s;
+border-bottom: 2.5px solid #000000;
+margin: 0;
+}
+.anime_start_underline:hover:after { 
+width: 85%; 
+} 
+
+/*Burger*/
+.burger {
+  display: none !important;
+}
+
+.map {
+  height: 500px;
+}
+
+/*Media querries*/
+@media screen and (max-width: 768px) {
+  .menu { 
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    width:0;
+    position: absolute;
+    left: 0;
+    top:80px;
+    background: #0000007a;
+    backdrop-filter: blur(7.5px);
+    transform: translateX(100%);
+    transition: all .5s ease-in-out;
+  }
+  .menu .nav-item{
+    padding-left: 25px;
+    
+  }
+  .show-nav .menu { 
+    width: 100vw;
+    transform: translateX(0);
+    text-align: center;
+  } 
+  .show-nav .bar{
+    width: 0;
+    background-color: transparent;
+  }
+  .show-nav .bar::before{
+    transform: rotate(45deg);
+  }
+  .show-nav .bar::after{
+    transform: rotate(-45deg);
+  }
+/* Toggle menu */
+  .burger {
+    display: block !important;;
+    position: relative;
+    background: transparent;
+    padding:0;
+    width:50px;
+    height:50px;
+    border: none !important;
+    margin-right: 25px;
+}
+  .bar {
+    display:block !important;
+    width:45px;
+    height:4px;
+    border-radius:3px;
+    background :white; 
+    transition: all .5s ease-in-out;
+  }
+  .bar::before, .bar::after {
+    content:"";
+    width:45px;
+    height:4px;
+    position:absolute; 
+    left:0;
+    background: white; 
+    border-radius:3px;
+    transition: all .5s ease-in-out;
+  }
+  .bar::before {
+    transform:translateY(-12px)
+  }
+  .bar::after {
+    transform:translateY(12px)
+  }
+  .textButton {  /*Text sur le slide*/
+    display: none;
+  }
+  .bouttonSlide { /*Bouton sur le slide*/
+    display: none;
+  }
+  .logo { /*logo*/
+    left: 0 !important;
+    width: 150px;
+  }
+
+  .fs_mbl {  /*Font Size Mobile*/
+    font-size: 12px;
+  }
+  .txt-center { 
+    text-align: center;
+  }
+
+}
